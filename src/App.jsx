@@ -3,14 +3,14 @@
 
 export default function App() {
   return (
-    <div className="bg-white text-gray-800 font-sans">
+    <div className="bg-gray-50 text-gray-800 font-sans">
       {/* Hero Section */}
-      <section className="text-center py-12 px-6 bg-gradient-to-b from-blue-100 to-white">
-        <img src="/gigi.png" alt="Logo" className="mx-auto w-10 mb-4" />
+      <section className="text-center py-12 px-6 bg-gradient-to-b from-blue-100 to-gray-50">
+        <img src="/gigi.png" alt="Logo" className="mx-auto w-24 mb-4" />
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Elimine Suas Dores nas Costas em Poucos Dias</h1>
         <h2 className="text-lg md:text-2xl mb-6">Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas</h2>
         <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-blue-700">Quero Alívio Agora</button>
+          <button className="bg-green-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-green-700">Quero Alívio Agora</button>
         </a>
       </section>
 
@@ -22,7 +22,7 @@ export default function App() {
       </section>
 
       {/* Bloco 3 - Benefícios */}
-      <section className="bg-gray-50 py-12 px-6">
+      <section className="bg-blue-50 py-12 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
           <div>
             <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
@@ -45,7 +45,7 @@ export default function App() {
 
       {/* Bloco 4 - Mockup + Oferta */}
       <section className="py-12 px-6 text-center">
-        
+        <img src="/Área de Membros Premium.png" alt="Mockup Produto" className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" />
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
         <p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
         <p className="text-xl font-bold text-green-700">De R$ 97 por apenas R$ 33,00</p>
@@ -55,7 +55,7 @@ export default function App() {
       </section>
 
       {/* Bloco 5 - Bônus */}
-      <section className="bg-blue-50 py-12 px-6">
+      <section className="bg-blue-100 py-12 px-6">
         <h2 className="text-2xl font-bold text-center mb-8">Bônus Exclusivos (opcionais)</h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded-2xl shadow">
@@ -74,7 +74,7 @@ export default function App() {
       {/* Bloco 6 - Garantia */}
       <section className="py-12 px-6 text-center bg-white">
         <h2 className="text-2xl font-bold mb-4">Garantia Condicional de 7 Dias</h2>
-        <p className="mb-4 max-w-2xl mx-auto">Aplique o método e, se não sentir nenhuma melhora, devolvemos seu dinheiro. Sem burocracia.</p>
+        <p className="mb-4 max-w-2xl mx-auto">Aplique o método e, se não sentir nenhuma melhora, basta nos mostrar sua aplicação e devolvemos seu dinheiro. Sem burocracia.</p>
         <p className="italic text-gray-600">Você só precisa aplicar para colher os resultados.</p>
       </section>
 
