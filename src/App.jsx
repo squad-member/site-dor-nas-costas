@@ -6,7 +6,7 @@ export default function App() {
     <div className="bg-white text-gray-800 font-sans">
       {/* Hero Section */}
       <section className="text-center py-12 px-6 bg-gradient-to-b from-blue-100 to-white">
-        <img src="/Logo.png" alt="descrição" />
+         <img src="/gigi.png" alt="Mockup Produto" className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" />
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Elimine Suas Dores nas Costas em Poucos Dias</h1>
         <h2 className="text-lg md:text-2xl mb-6">Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas</h2>
         <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
@@ -45,7 +45,7 @@ export default function App() {
 
       {/* Bloco 4 - Mockup + Oferta */}
       <section className="py-12 px-6 text-center">
-        <img src="/Área de Membros Premium.png" alt="Mockup Produto" className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" />
+       
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
         <p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
         <p className="text-xl font-bold text-green-700">De R$ 97 por apenas R$ 33,00</p>
