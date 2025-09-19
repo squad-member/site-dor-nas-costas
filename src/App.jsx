@@ -74,7 +74,7 @@ export default function App() {
       {/* Bloco 6 - Garantia */}
       <section className="py-12 px-6 text-center bg-white">
         <h2 className="text-2xl font-bold mb-4">Garantia Condicional de 7 Dias</h2>
-        <p className="mb-4 max-w-2xl mx-auto">Aplique o método e, se não sentir nenhuma melhora, basta nos mostrar sua aplicação e devolvemos seu dinheiro. Sem burocracia.</p>
+        <p className="mb-4 max-w-2xl mx-auto">Aplique o método e, se não sentir nenhuma melhora, devolvemos seu dinheiro. Sem burocracia.</p>
         <p className="italic text-gray-600">Você só precisa aplicar para colher os resultados.</p>
       </section>
 
