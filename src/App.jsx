@@ -45,7 +45,6 @@ export default function App() {
 
       {/* Bloco 4 - Mockup + Oferta */}
       <section className="py-12 px-6 text-center">
-        <img src="/Área de Membros Premium.png" alt="Mockup Produto" className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" />
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
         <p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
         <p className="text-xl font-bold text-green-700">De R$ 97 por apenas R$ 33,00</p>
