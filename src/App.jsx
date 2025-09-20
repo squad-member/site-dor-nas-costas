@@ -126,7 +126,7 @@ export default function Page() {
           <li>✅ Protocolos rápidos para manter a coluna saudável no longo prazo</li>
         </ul>
         <p className="text-lg font-bold text-green-700">
-          Valor real: R$ 47 — você recebe 100% grátis após o 7º dia
+          você recebe 100% grátis após o 7º dia
         </p>
       </section>
 
