@@ -116,9 +116,9 @@ return ( <div className="bg-[#1D361F] text-white font-sans">
   </section>
 
   {/* Bloco 8 - CTA Final */}
-  <section className="bg-white py-12 px-6 text-center">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-black">Pronto para dizer adeus à dor nas costas?</h2>
-    <p className="mb-4 text-lg text-black">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
+  <section className="bg-black py-12 px-6 text-center">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Pronto para dizer adeus à dor nas costas?</h2>
+    <p className="mb-4 text-lg text-white">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
     <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
       <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white hover:text-black">Quero Começar Agora</button>
     </a>
