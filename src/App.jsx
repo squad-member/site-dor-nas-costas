@@ -2,10 +2,9 @@
 // Inclui: logo, mockup, CTAs, garantia, provas, blocos visuais
 
 export default function Page() {
-return ( <div className="bg-[#1D361F] text-white font-sans">
+return ( <div className="bg-white text-black font-sans">
 {/* Hero Section */} 
 <section className="text-center py-12 px-6 bg-gradient-to-b from-[#859B48] to-[#1D361F]"> 
-  <img src="/gigi.png" alt="Logo" className="mx-auto w-24 mb-4" /> 
   <h1 className="text-3xl md:text-5xl font-bold mb-4">Elimine Suas Dores nas Costas em Poucos Dias</h1> 
   <h2 className="text-lg md:text-2xl mb-6">Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas</h2> 
   <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer"> 
