@@ -23,16 +23,18 @@ return ( <div className="bg-white text-black font-sans">
 </section>
 
 {/* Bloco 2 - Manifesto */}
-<section className="bg-black text-white max-w-4xl mx-auto py-12 px-6">
-  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-    Você não precisa conviver com a dor
-  </h2>
-  <p className="text-lg text-center mb-6">
-    A raiz da dor nas costas muitas vezes não é a coluna — é um músculo esquecido chamado iliopsoas.
-  </p>
-  <p className="text-center italic">
-    "Essa descoberta muda tudo. E você pode começar hoje."
-  </p>
+<section className="bg-black text-white py-12 px-6 text-center">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4">
+      Você não precisa conviver com a dor
+    </h2>
+    <p className="text-lg mb-6">
+      A raiz da dor nas costas muitas vezes não é a coluna — é um músculo esquecido chamado iliopsoas.
+    </p>
+    <p className="italic">
+      "Essa descoberta muda tudo. E você pode começar hoje."
+    </p>
+  </div>
 </section>
 
  {/* Bloco 3 - Benefícios */}
