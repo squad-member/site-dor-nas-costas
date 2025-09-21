@@ -4,7 +4,7 @@
 export default function Page() {
 return ( <div className="bg-white text-black font-sans">
  {/* Hero Section */}
-    <section className="text-center py-12 px-6 bg-black text-white">
+    <section className="text-center py-12 px-6 bg-white text-black">
       <h1 className="text-3xl md:text-5xl font-bold mb-4">
         Elimine Suas Dores nas Costas em Poucos Dias
       </h1>
@@ -23,7 +23,7 @@ return ( <div className="bg-white text-black font-sans">
     </section>
 
    {/* Bloco 2 - Manifesto */}
-    <section className="bg-white text-black max-w-4xl mx-auto py-12 px-6">
+    <section className="bg-black text-white max-w-4xl mx-auto py-12 px-6">
       <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
         Você não precisa conviver com a dor
       </h2>
@@ -36,7 +36,7 @@ return ( <div className="bg-white text-black font-sans">
     </section>
 
   {/* Bloco 3 - Benefícios */}
-  <section className="bg-black text-[#859B48] py-12 px-6">
+  <section className="bg-white text-[#859B48] py-12 px-6">
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
       <div>
         <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
