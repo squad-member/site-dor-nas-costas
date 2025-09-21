@@ -2,8 +2,17 @@
 // Inclui: logo, mockup, CTAs, garantia, provas, blocos visuais
 
 export default function Page() {
-return ( <div className="bg-white text-gray-800 font-sans">
-{/* Hero Section */} <section className="text-center py-12 px-6 bg-gradient-to-b from-blue-100 to-white"> <img src="/gigi.png" alt="Logo" className="mx-auto w-24 mb-4" /> <h1 className="text-3xl md:text-5xl font-bold mb-4">Elimine Suas Dores nas Costas em Poucos Dias</h1> <h2 className="text-lg md:text-2xl mb-6">Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas</h2> <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer"> <button className="bg-green-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-green-700">Quero Alívio Agora</button> </a> </section>
+return ( <div className="bg-[#1D361F] text-white font-sans">
+{/* Hero Section */} 
+<section className="text-center py-12 px-6 bg-gradient-to-b from-[#859B48] to-[#1D361F]"> 
+  <img src="/gigi.png" alt="Logo" className="mx-auto w-24 mb-4" /> 
+  <h1 className="text-3xl md:text-5xl font-bold mb-4">Elimine Suas Dores nas Costas em Poucos Dias</h1> 
+  <h2 className="text-lg md:text-2xl mb-6">Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas</h2> 
+  <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer"> 
+    <button className="bg-black text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#859B48]">Quero Alívio Agora</button> 
+  </a> 
+</section>
+
   {/* Bloco 2 - Manifesto */}
   <section className="max-w-4xl mx-auto py-12 px-6">
     <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">Você não precisa conviver com a dor</h2>
@@ -12,7 +21,7 @@ return ( <div className="bg-white text-gray-800 font-sans">
   </section>
 
   {/* Bloco 3 - Benefícios */}
-  <section className="bg-gray-50 py-12 px-6">
+  <section className="bg-[#859B48] text-[#1D361F] py-12 px-6">
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
       <div>
         <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
@@ -32,41 +41,43 @@ return ( <div className="bg-white text-gray-800 font-sans">
       </div>
     </div>
   </section>
+
   {/* Bloco 4 - Mockup + Oferta */}
   <section className="py-12 px-6 text-center">
     <img src="/Área de Membros Premium.png" alt="Mockup Produto" className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" />
     <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
     <p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
-    <p className="text-xl font-bold text-green-700">De R$ 97 por apenas R$ 33,00</p>
+    <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
     <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
-      <button className="bg-green-600 text-white px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-green-700">Comprar Agora</button>
+      <button className="bg-black text-white px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-[#859B48]">Comprar Agora</button>
     </a>
   </section>
 
   {/* Bloco 5 - Bônus */}
-  <section className="bg-blue-50 py-12 px-6">
-    <h2 className="text-2xl font-bold text-center mb-8">Bônus Exclusivos (opcionais)</h2>
+  <section className="bg-[#1D361F] py-12 px-6">
+    <h2 className="text-2xl font-bold text-center mb-8 text-white">Bônus Exclusivos (opcionais)</h2>
     <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-white p-6 rounded-2xl shadow">
+      <div className="bg-[#859B48] text-black p-6 rounded-2xl shadow">
         <h3 className="font-semibold text-xl mb-2">🥗 Dieta Anti-inflamatória de 7 Dias</h3>
         <p className="mb-2">Reduza dores e inchaços com um cardápio funcional e delicioso.</p>
-        <p className="text-green-600 font-bold">Apenas R$ 19,00</p>
+        <p className="text-black font-bold">Apenas R$ 19,00</p>
       </div>
-      <div className="bg-white p-6 rounded-2xl shadow">
+      <div className="bg-[#859B48] text-black p-6 rounded-2xl shadow">
         <h3 className="font-semibold text-xl mb-2">🧘 Guia de Postura e Coluna Saudável</h3>
         <p className="mb-2">Posturas e alongamentos que mantêm sua coluna protegida todos os dias.</p>
-        <p className="text-green-600 font-bold">Apenas R$ 19,00</p>
+        <p className="text-black font-bold">Apenas R$ 19,00</p>
       </div>
     </div>
   </section>
+
   {/* Bloco - Bônus Pós 7 Dias */}
-  <section className="bg-yellow-50 py-12 px-6 text-center">
+  <section className="bg-yellow-50 text-black py-12 px-6 text-center">
     <h2 className="text-2xl font-bold mb-4 text-yellow-800">🎁 Bônus Especial Liberado Após 7 Dias</h2>
     <p className="text-lg max-w-2xl mx-auto mb-6">
       Como recompensa por aplicar o método durante 7 dias, você desbloqueia o acesso ao <strong>Plano Avançado de Manutenção da Coluna</strong>.
     </p>
     <p className="mb-4">Esse plano exclusivo inclui:</p>
-    <ul className="list-disc list-inside text-left max-w-xl mx-auto text-gray-700 mb-6">
+    <ul className="list-disc list-inside text-left max-w-xl mx-auto text-black mb-6">
       <li>✅ Rotina semanal de prevenção da dor</li>
       <li>✅ Checklists e lembretes visuais</li>
       <li>✅ Protocolos rápidos para manter a coluna saudável no longo prazo</li>
@@ -75,13 +86,14 @@ return ( <div className="bg-white text-gray-800 font-sans">
   </section>
 
   {/* Bloco 6 - Garantia */}
-  <section className="py-12 px-6 text-center bg-white">
+  <section className="py-12 px-6 text-center bg-white text-black">
     <h2 className="text-2xl font-bold mb-4">Garantia Condicional de 7 Dias</h2>
     <p className="mb-4 max-w-2xl mx-auto">Aplique o método e, se não sentir nenhuma melhora, basta nos mostrar sua aplicação e devolvemos seu dinheiro. Sem burocracia.</p>
     <p className="italic text-gray-600">Você só precisa aplicar para colher os resultados.</p>
   </section>
+
   {/* Bloco 7 - FAQ */}
-  <section className="bg-gray-100 py-12 px-6">
+  <section className="bg-[#859B48] text-black py-12 px-6">
     <div className="max-w-4xl mx-auto">
       <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">❓ Perguntas Frequentes</h2>
       <div className="mb-4">
@@ -104,13 +116,14 @@ return ( <div className="bg-white text-gray-800 font-sans">
   </section>
 
   {/* Bloco 8 - CTA Final */}
-  <section className="bg-green-100 py-12 px-6 text-center">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4">Pronto para dizer adeus à dor nas costas?</h2>
-    <p className="mb-4 text-lg">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
+  <section className="bg-black py-12 px-6 text-center">
+    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Pronto para dizer adeus à dor nas costas?</h2>
+    <p className="mb-4 text-lg text-white">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
     <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
-      <button className="bg-green-600 text-white px-8 py-3 rounded-2xl text-lg shadow hover:bg-green-700">Quero Começar Agora</button>
+      <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white hover:text-black">Quero Começar Agora</button>
     </a>
   </section>
 </div>
+
 );
 }
