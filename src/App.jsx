@@ -3,70 +3,82 @@
 
 export default function Page() {
 return ( <div className="bg-white text-black font-sans">
- {/* Hero Section */}
-    <section className="text-center py-12 px-6 bg-black text-white">
-      <h1 className="text-3xl md:text-5xl font-bold mb-4">
-        Elimine Suas Dores nas Costas em Poucos Dias
-      </h1>
-      <h2 className="text-lg md:text-2xl mb-6">
-        Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas
-      </h2>
-      <a 
-        href="https://hotmart.com/SEU-LINK-AQUI" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        <button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239]">
-          Quero Alívio Agora
-        </button>
-      </a>
-    </section>
+{/* Hero Section */}
+<section className="text-center py-12 px-6 bg-white text-black">
+  <h1 className="text-3xl md:text-5xl font-bold mb-4">
+    Elimine Suas Dores nas Costas em Poucos Dias
+  </h1>
+  <h2 className="text-lg md:text-2xl mb-6">
+    Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas
+  </h2>
+  <a 
+    href="https://hotmart.com/SEU-LINK-AQUI" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239]">
+      Quero Alívio Agora
+    </button>
+  </a>
+</section>
 
-   {/* Bloco 2 - Manifesto */}
-    <section className="bg-white text-black max-w-4xl mx-auto py-12 px-6">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-        Você não precisa conviver com a dor
-      </h2>
-      <p className="text-lg text-center mb-6">
-        A raiz da dor nas costas muitas vezes não é a coluna — é um músculo esquecido chamado iliopsoas.
-      </p>
-      <p className="text-center italic">
-        "Essa descoberta muda tudo. E você pode começar hoje."
-      </p>
-    </section>
+{/* Bloco 2 - Manifesto */}
+<section className="bg-black text-white max-w-4xl mx-auto py-12 px-6">
+  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+    Você não precisa conviver com a dor
+  </h2>
+  <p className="text-lg text-center mb-6">
+    A raiz da dor nas costas muitas vezes não é a coluna — é um músculo esquecido chamado iliopsoas.
+  </p>
+  <p className="text-center italic">
+    "Essa descoberta muda tudo. E você pode começar hoje."
+  </p>
+</section>
 
-  {/* Bloco 3 - Benefícios */}
-  <section className="bg-black text-[#1D361F] py-12 px-6">
-    <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-      <div>
-        <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
-        <p>Com apenas 15 minutos por dia, veja sua mobilidade voltar ao normal.</p>
-      </div>
-      <div>
-        <h3 className="text-xl font-semibold mb-2">🛏️ Durma melhor</h3>
-        <p>Sem acordar travado ou com dores na lombar.</p>
-      </div>
-      <div>
-        <h3 className="text-xl font-semibold mb-2">🧘‍♂️ Pratique em casa</h3>
-        <p>Sem equipamentos, sem academia — com orientação clara e segura.</p>
-      </div>
-      <div>
-        <h3 className="text-xl font-semibold mb-2">📉 Evite cirurgia e remédios</h3>
-        <p>Tratamento natural focado na raiz do problema, e não nos sintomas.</p>
-      </div>
+ {/* Bloco 3 - Benefícios */}
+<section className="bg-white text-black py-12 px-6">
+  <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+    <div>
+      <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
+      <p>Com apenas 15 minutos por dia, veja sua mobilidade voltar ao normal.</p>
     </div>
-  </section>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">🛏️ Durma melhor</h3>
+      <p>Sem acordar travado ou com dores na lombar.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">🧘‍♂️ Pratique em casa</h3>
+      <p>Sem equipamentos, sem academia — com orientação clara e segura.</p>
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">📉 Evite cirurgia e remédios</h3>
+      <p>Tratamento natural focado na raiz do problema, e não nos sintomas.</p>
+    </div>
+  </div>
+</section>
 
   {/* Bloco 4 - Mockup + Oferta */}
-  <section className="py-12 px-6 text-center">
-    <img src="/Área de Membros Premium.png" alt="Mockup Produto" className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" />
-    <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
-    <p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
-    <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
-    <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
-      <button className="bg-black text-white px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-[#859B48]">Comprar Agora</button>
-    </a>
-  </section>
+<section className="bg-black text-white py-12 px-6 text-center">
+  <img 
+    src="/Área de Membros Premium.png" 
+    alt="Mockup Produto" 
+    className="mx-auto w-full max-w-xl rounded-2xl shadow-lg mb-6" 
+  />
+  <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
+  <p className="text-lg mb-4">
+    Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.
+  </p>
+  <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
+  <a 
+    href="https://hotmart.com/SEU-LINK-AQUI" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white">
+      Comprar Agora
+    </button>
+  </a>
+</section>
 
   {/* Bloco 5 - Bônus */}
   <section className="bg-[#1D361F] py-12 px-6">
