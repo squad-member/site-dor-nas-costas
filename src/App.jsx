@@ -36,7 +36,7 @@ return ( <div className="bg-white text-black font-sans">
     </section>
 
   {/* Bloco 3 - Benefícios */}
-  <section className="bg-white text-[#1D361F] py-12 px-6">
+  <section className="bg-black text-[#1D361F] py-12 px-6">
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
       <div>
         <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
