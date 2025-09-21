@@ -3,24 +3,40 @@
 
 export default function Page() {
 return ( <div className="bg-white text-black font-sans">
-{/* Hero Section */} 
-<section className="text-center py-12 px-6 bg-gradient-to-b from-[#859B48] to-[#1D361F]"> 
-  <h1 className="text-3xl md:text-5xl font-bold mb-4">Elimine Suas Dores nas Costas em Poucos Dias</h1> 
-  <h2 className="text-lg md:text-2xl mb-6">Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas</h2> 
-  <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer"> 
-    <button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#859B48]">Quero Alívio Agora</button> 
-  </a> 
-</section>
+ {/* Hero Section */}
+    <section className="text-center py-12 px-6 bg-black text-white">
+      <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        Elimine Suas Dores nas Costas em Poucos Dias
+      </h1>
+      <h2 className="text-lg md:text-2xl mb-6">
+        Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas
+      </h2>
+      <a 
+        href="https://hotmart.com/SEU-LINK-AQUI" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239]">
+          Quero Alívio Agora
+        </button>
+      </a>
+    </section>
 
-  {/* Bloco 2 - Manifesto */}
-  <section className="max-w-4xl mx-auto py-12 px-6">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">Você não precisa conviver com a dor</h2>
-    <p className="text-lg text-center mb-6">A raiz da dor nas costas muitas vezes não é a coluna — é um músculo esquecido chamado iliopsoas.</p>
-    <p className="text-center italic">"Essa descoberta muda tudo. E você pode começar hoje."</p>
-  </section>
+   {/* Bloco 2 - Manifesto */}
+    <section className="bg-white text-black max-w-4xl mx-auto py-12 px-6">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+        Você não precisa conviver com a dor
+      </h2>
+      <p className="text-lg text-center mb-6">
+        A raiz da dor nas costas muitas vezes não é a coluna — é um músculo esquecido chamado iliopsoas.
+      </p>
+      <p className="text-center italic">
+        "Essa descoberta muda tudo. E você pode começar hoje."
+      </p>
+    </section>
 
   {/* Bloco 3 - Benefícios */}
-  <section className="bg-black text-[#859B48] py-12 px-6">
+  <section className="bg-white text-[#1D361F] py-12 px-6">
     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
       <div>
         <h3 className="text-xl font-semibold mb-2">🔓 Libere seu corpo da dor</h3>
