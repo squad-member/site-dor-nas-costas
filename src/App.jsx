@@ -2,40 +2,41 @@
 // Inclui: logo, mockup, CTAs, garantia, provas, blocos visuais
 
 export default function App() {
-  return (
-    <div className="bg-white text-black font-sans">
-      {/* Hero Section */}
-      <section className="text-center py-24 px-6 bg-white text-black">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          Elimine Suas Dores nas Costas em Poucos Dias
-        </h1>
-        <h2 className="text-lg md:text-2xl mb-6">
-          Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas
-        </h2>
+return (
+<div className="bg-white text-black font-sans">
+{/* Hero Section */}
+<section className="text-center py-24 px-6 bg-white text-black">
+<h1 className="text-3xl md:text-5xl font-bold mb-4">
+Elimine Suas Dores nas Costas em Poucos Dias
+</h1>
+<h2 className="text-lg md:text-2xl mb-6">
+Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas
+</h2>
 
-        <div className="flex justify-center mb-6">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/SEU_VIDEO_ID"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full max-w-3xl rounded-xl shadow-lg"
-          ></iframe>
-        </div>
 
-        <a 
-          href="https://hotmart.com/SEU-LINK-AQUI" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          <button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239]">
-            Quero Alívio Agora
-          </button>
-        </a>
-      </section>
+<div className="flex justify-center mb-6">
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/SEU_VIDEO_ID"
+title="YouTube video player"
+frameBorder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowFullScreen
+className="w-full max-w-3xl rounded-xl shadow-lg"
+></iframe>
+</div>
+
+
+<a
+href="#final-cta"
+rel="noopener noreferrer"
+>
+<button className="animate-pulse-heart bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239]">
+Quero Alívio Agora
+</button>
+</a>
+</section>
 
       {/* Bloco 2 - Manifesto */}
       <section className="bg-black text-white py-12 px-6 text-center">
@@ -133,23 +134,21 @@ export default function App() {
 
 
       {/* Bloco 4 - Mockup + Oferta */}
-      <section className="bg-black text-white py-12 px-6 text-center">
-
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
-        <p className="text-lg mb-4">
-          Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.
-        </p>
-        <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
-        <a 
-          href="https://hotmart.com/SEU-LINK-AQUI" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white">
-            Comprar Agora
-          </button>
-        </a>
-      </section>
+<section className="bg-black text-white py-12 px-6 text-center">
+<h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
+<p className="text-lg mb-4">
+Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.
+</p>
+<p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
+<a
+href="#final-cta"
+rel="noopener noreferrer"
+>
+<button className="animate-pulse-heart bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white">
+Comprar Agora
+</button>
+</a>
+</section>
 
       {/* Bloco 5 - Bônus */}
       <section className="bg-[#1D361F] py-12 px-6">
@@ -213,14 +212,27 @@ export default function App() {
         </div>
       </section>
 
-      {/* Bloco 8 - CTA Final */}
-      <section className="bg-black py-12 px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Pronto para dizer adeus à dor nas costas?</h2>
-        <p className="mb-4 text-lg text-white">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
-        <a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
-          <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white hover:text-black">Quero Começar Agora</button>
-        </a>
-      </section>
-    </div>
-  );
+{/* CTA Final */}
+<section id="final-cta" className="bg-black py-12 px-6 text-center">
+<h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Pronto para dizer adeus à dor nas costas?</h2>
+<p className="mb-4 text-lg text-white">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
+<a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
+<button className="animate-pulse-heart bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white hover:text-black">
+Quero Começar Agora
+</button>
+</a>
+</section>
+
+
+<style jsx>{`
+@keyframes pulse-heart {
+0%, 100% { transform: scale(1); box-shadow: 0 0 15px #859B48; }
+50% { transform: scale(1.1); box-shadow: 0 0 25px #859B48; }
+}
+.animate-pulse-heart {
+animation: pulse-heart 1.2s infinite;
+}
+`}</style>
+</div>
+);
 }
