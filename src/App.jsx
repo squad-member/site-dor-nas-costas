@@ -200,28 +200,30 @@ animation: pulse-heart 1.2s infinite;
         <p className="italic text-gray-600">Você só precisa aplicar para colher os resultados.</p>
       </section>
 
-      {/* Bloco 7 - FAQ */}
-      <section className="bg-[#859B48] text-black py-12 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">❓ Perguntas Frequentes</h2>
-          <div className="mb-4">
-            <h3 className="font-semibold">Preciso de algum equipamento para aplicar o método?</h3>
-            <p>Não. Todo o conteúdo é pensado para ser feito em casa, com o peso do próprio corpo.</p>
-          </div>
-          <div className="mb-4">
-            <h3 className="font-semibold">Serve para qualquer idade?</h3>
-            <p>Sim, o método é leve, adaptável e seguro para todas as idades.</p>
-          </div>
-          <div className="mb-4">
-            <h3 className="font-semibold">Em quanto tempo começo a sentir melhora?</h3>
-            <p>Alguns usuários relatam alívio já nos primeiros 3 dias. A maioria sente melhora até o 7º dia.</p>
-          </div>
-          <div className="mb-4">
-            <h3 className="font-semibold">Posso fazer mesmo com hérnia de disco?</h3>
-            <p>Sim. Os exercícios são seguros e não exigem impacto. Sempre respeite seus limites.</p>
-          </div>
-        </div>
-      </section>
+     {/* FAQ Section */}
+<section className="bg-[#859B48] text-black py-16 px-6">
+<div className="max-w-4xl mx-auto">
+<h2 className="text-3xl md:text-4xl font-extrabold text-center mb-10">❓ Perguntas Frequentes</h2>
+<div className="grid gap-6">
+<div className="bg-white rounded-xl p-6 shadow-lg">
+<h3 className="font-bold text-lg mb-2">📌 Preciso de algum equipamento para aplicar o método?</h3>
+<p>Não. Todo o conteúdo é pensado para ser feito em casa, com o peso do próprio corpo.</p>
+</div>
+<div className="bg-white rounded-xl p-6 shadow-lg">
+<h3 className="font-bold text-lg mb-2">👵 Serve para qualquer idade?</h3>
+<p>Sim, o método é leve, adaptável e seguro para todas as idades.</p>
+</div>
+<div className="bg-white rounded-xl p-6 shadow-lg">
+<h3 className="font-bold text-lg mb-2">⏳ Em quanto tempo começo a sentir melhora?</h3>
+<p>Alguns usuários relatam alívio já nos primeiros 3 dias. A maioria sente melhora até o 7º dia.</p>
+</div>
+<div className="bg-white rounded-xl p-6 shadow-lg">
+<h3 className="font-bold text-lg mb-2">🩺 Posso fazer mesmo com hérnia de disco?</h3>
+<p>Sim. Os exercícios são seguros e não exigem impacto. Sempre respeite seus limites.</p>
+</div>
+</div>
+</div>
+</section>
 
 {/* CTA Final */}
 <section id="final-cta" className="bg-black py-12 px-6 text-center">
