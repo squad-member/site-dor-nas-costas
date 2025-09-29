@@ -2,6 +2,14 @@
 // Inclui: logo, mockup, CTAs, garantia, provas, blocos visuais
 
 export default function App() {
+const scrollToBuy = () => {
+const el = document.getElementById("comprar");
+if (el) {
+el.scrollIntoView({ behavior: "smooth" });
+}
+};
+
+
 return (
 <div className="bg-white text-black font-sans">
 {/* Hero Section */}
@@ -28,14 +36,9 @@ className="w-full max-w-3xl rounded-xl shadow-lg"
 </div>
 
 
-<a
-href="#final-cta"
-rel="noopener noreferrer"
->
-<button className="animate-pulse-heart bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239]">
+<button onClick={scrollToBuy} className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239] animate-pulse">
 Quero Alívio Agora
 </button>
-</a>
 </section>
 
       {/* Bloco 2 - Manifesto */}
@@ -133,18 +136,19 @@ Quero Alívio Agora
 
 
 
-      {/* Bloco 4 - Mockup + Oferta */}
-<section className="bg-black text-white py-12 px-6 text-center">
+{/* Bloco 4 - Mockup + Oferta */}
+<section id="comprar" className="bg-black text-white py-12 px-6 text-center">
 <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
 <p className="text-lg mb-4">
 Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.
 </p>
 <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
 <a
-href="#final-cta"
+href="https://hotmart.com/SEU-LINK-AQUI"
+target="_blank"
 rel="noopener noreferrer"
 >
-<button className="animate-pulse-heart bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white">
+<button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white animate-heartbeat">
 Comprar Agora
 </button>
 </a>
