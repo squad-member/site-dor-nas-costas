@@ -101,17 +101,17 @@ export default function App() {
 {/* Seção de Avaliações */}
 <section className="bg-white text-black py-16 px-6 text-center">
   <h2 className="text-3xl font-extrabold mb-8">⭐ As Nossas Avaliações</h2>
-  <div className="overflow-hidden relative max-w-6xl mx-auto">
-    <div className="flex animate-carousel whitespace-nowrap gap-4">
-      <img src="/avaliacao1.jpg" alt="Avaliação 1" className="h-auto w-[400px] inline-block" />
-      <img src="/avaliacao2.jpg" alt="Avaliação 2" className="h-auto w-[400px] inline-block" />
-      <img src="/avaliacao3.jpg" alt="Avaliação 3" className="h-auto w-[400px] inline-block" />
-      <img src="/avaliacao4.jpg" alt="Avaliação 4" className="h-auto w-[400px] inline-block" />
+  <div className="overflow-hidden relative max-w-7xl mx-auto">
+    <div className="flex animate-carousel whitespace-nowrap gap-6">
+      <img src="/avaliacao1.jpg" alt="Avaliação 1" className="h-auto w-[500px] inline-block" />
+      <img src="/avaliacao2.jpg" alt="Avaliação 2" className="h-auto w-[500px] inline-block" />
+      <img src="/avaliacao3.jpg" alt="Avaliação 3" className="h-auto w-[500px] inline-block" />
+      <img src="/avaliacao4.jpg" alt="Avaliação 4" className="h-auto w-[500px] inline-block" />
       {/* Loop duplicado para efeito contínuo */}
-      <img src="/avaliacao1.jpg" alt="Avaliação 1" className="h-auto w-[400px] inline-block" />
-      <img src="/avaliacao2.jpg" alt="Avaliação 2" className="h-auto w-[400px] inline-block" />
-      <img src="/avaliacao3.jpg" alt="Avaliação 3" className="h-auto w-[400px] inline-block" />
-      <img src="/avaliacao4.jpg" alt="Avaliação 4" className="h-auto w-[400px] inline-block" />
+      <img src="/avaliacao1.jpg" alt="Avaliação 1" className="h-auto w-[500px] inline-block" />
+      <img src="/avaliacao2.jpg" alt="Avaliação 2" className="h-auto w-[500px] inline-block" />
+      <img src="/avaliacao3.jpg" alt="Avaliação 3" className="h-auto w-[500px] inline-block" />
+      <img src="/avaliacao4.jpg" alt="Avaliação 4" className="h-auto w-[500px] inline-block" />
     </div>
   </div>
 
@@ -125,6 +125,7 @@ export default function App() {
     }
   `}</style>
 </section>
+
 
 
 
