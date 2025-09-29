@@ -74,6 +74,31 @@ export default function App() {
         </div>
       </section>
 
+      {/* Seção de Índice do Ebook */}
+<section className="bg-[#1D361F] text-[#859B48] py-12 px-6 text-center">
+  <div className="max-w-4xl mx-auto bg-black rounded-2xl p-8 shadow-lg">
+    <h2 className="text-3xl font-extrabold text-[#859B48] mb-8 uppercase tracking-wide">📚 Conteúdo do Ebook</h2>
+    <ul className="text-left space-y-6 text-lg md:text-xl font-medium">
+      <li>
+        <span className="text-3xl font-extrabold text-[#859B48]">01.</span> Introdução
+      </li>
+      <li>
+        <span className="text-3xl font-extrabold text-[#859B48]">02.</span> Músculo Iliopsoas
+      </li>
+      <li>
+        <span className="text-3xl font-extrabold text-[#859B48]">03.</span> Síndrome de Iliopsoas
+      </li>
+      <li>
+        <span className="text-3xl font-extrabold text-[#859B48]">04.</span> Como Tratar as Dores nas Costas e a Síndrome de Iliopsoas
+      </li>
+      <li>
+        <span className="text-3xl font-extrabold text-[#859B48]">05.</span> Sequência de Exercícios
+      </li>
+    </ul>
+  </div>
+</section>
+
+
       {/* Bloco 4 - Mockup + Oferta */}
       <section className="bg-black text-white py-12 px-6 text-center">
         <img 
