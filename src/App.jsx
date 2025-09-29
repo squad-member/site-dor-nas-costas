@@ -103,15 +103,15 @@ export default function App() {
   <h2 className="text-3xl font-extrabold mb-8">⭐ As Nossas Avaliações</h2>
   <div className="overflow-hidden relative max-w-6xl mx-auto">
     <div className="flex animate-carousel whitespace-nowrap gap-4">
-      <img src="/avaliacao1.png" alt="Avaliação 1" className="h-auto w-72 inline-block" />
-      <img src="/avaliacao2.png" alt="Avaliação 2" className="h-auto w-72 inline-block" />
-      <img src="/avaliacao3.png" alt="Avaliação 3" className="h-auto w-72 inline-block" />
-      <img src="/avaliacao4.png" alt="Avaliação 4" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao1.jpg" alt="Avaliação 1" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao2.jpg" alt="Avaliação 2" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao3.jpg" alt="Avaliação 3" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao4.jpg" alt="Avaliação 4" className="h-auto w-72 inline-block" />
       {/* Loop duplicado para efeito contínuo */}
-      <img src="/avaliacao1.png" alt="Avaliação 1" className="h-auto w-72 inline-block" />
-      <img src="/avaliacao2.png" alt="Avaliação 2" className="h-auto w-72 inline-block" />
-      <img src="/avaliacao3.png" alt="Avaliação 3" className="h-auto w-72 inline-block" />
-      <img src="/avaliacao4.png" alt="Avaliação 4" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao1.jpg" alt="Avaliação 1" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao2.jpg" alt="Avaliação 2" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao3.jpg" alt="Avaliação 3" className="h-auto w-72 inline-block" />
+      <img src="/avaliacao4.jpg" alt="Avaliação 4" className="h-auto w-72 inline-block" />
     </div>
   </div>
 
