@@ -25,7 +25,7 @@ className="w-full max-w-3xl rounded-xl shadow-lg"
 </div>
 
 
-<a href="#cta" rel="noopener noreferrer">
+<a href="#final-cta" rel="noopener noreferrer">
 <button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg animate-pulse-glow">
 Quero Alívio Agora
 </button>
@@ -139,22 +139,27 @@ animation: pulseGlow 2s infinite;
 
 
 {/* Bloco 4 - Mockup + Oferta */}
-<section id="comprar" className="bg-black text-white py-12 px-6 text-center">
+<section id="cta" className="bg-black text-white py-12 px-6 text-center">
 <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
-<p className="text-lg mb-4">
-Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.
-</p>
+<p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
 <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
-<a
-href="https://hotmart.com/SEU-LINK-AQUI"
-target="_blank"
-rel="noopener noreferrer"
->
-<button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white animate-heartbeat">
+<a href="#final-cta" rel="noopener noreferrer">
+<button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white animate-pulse-heart">
 Comprar Agora
 </button>
 </a>
 </section>
+
+
+<style jsx>{`
+@keyframes pulse-heart {
+0%, 100% { transform: scale(1); box-shadow: 0 0 15px #859B48; }
+50% { transform: scale(1.1); box-shadow: 0 0 25px #859B48; }
+}
+.animate-pulse-heart {
+animation: pulse-heart 1.2s infinite;
+}
+`}</style>
 
       {/* Bloco 5 - Bônus */}
       <section className="bg-[#1D361F] py-12 px-6">
