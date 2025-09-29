@@ -1,19 +1,8 @@
-// Página de vendas React com Tailwind e estrutura de alta conversão
-// Inclui: logo, mockup, CTAs, garantia, provas, blocos visuais
-
 export default function App() {
-const scrollToBuy = () => {
-const el = document.getElementById("comprar");
-if (el) {
-el.scrollIntoView({ behavior: "smooth" });
-}
-};
-
-
 return (
-<div className="bg-white text-black font-sans">
+<div className="bg-white text-black font-sans scroll-smooth">
 {/* Hero Section */}
-<section className="text-center py-24 px-6 bg-white text-black">
+<section id="hero" className="text-center py-24 px-6 bg-white text-black">
 <h1 className="text-3xl md:text-5xl font-bold mb-4">
 Elimine Suas Dores nas Costas em Poucos Dias
 </h1>
@@ -36,10 +25,23 @@ className="w-full max-w-3xl rounded-xl shadow-lg"
 </div>
 
 
-<button onClick={scrollToBuy} className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-[#6f8239] animate-pulse">
+<a href="#cta" rel="noopener noreferrer">
+<button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg animate-pulse-glow">
 Quero Alívio Agora
 </button>
+</a>
 </section>
+
+
+<style jsx>{`
+@keyframes pulseGlow {
+0%, 100% { box-shadow: 0 0 0px #859B48; }
+50% { box-shadow: 0 0 25px #859B48; }
+}
+.animate-pulse-glow {
+animation: pulseGlow 2s infinite;
+}
+`}</style>
 
       {/* Bloco 2 - Manifesto */}
       <section className="bg-black text-white py-12 px-6 text-center">
