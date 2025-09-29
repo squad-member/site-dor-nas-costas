@@ -98,6 +98,32 @@ export default function App() {
 </div>
 </section>
 
+{/* Seção de Avaliações */}
+<section className="bg-black text-[#859B48] py-16 px-6 text-center">
+  <h2 className="text-3xl font-extrabold mb-8">⭐ As Nossas Avaliações</h2>
+  <div className="max-w-3xl mx-auto">
+    <div className="overflow-hidden relative rounded-2xl shadow-lg">
+      <div className="whitespace-nowrap animate-scroll-carousel flex">
+        <img src="/avaliacao1.png" alt="Avaliação 1" className="inline-block w-full md:w-1/2 lg:w-1/3 xl:w-1/4" />
+        <img src="/avaliacao2.png" alt="Avaliação 2" className="inline-block w-full md:w-1/2 lg:w-1/3 xl:w-1/4" />
+        <img src="/avaliacao3.png" alt="Avaliação 3" className="inline-block w-full md:w-1/2 lg:w-1/3 xl:w-1/4" />
+        <img src="/avaliacao4.png" alt="Avaliação 4" className="inline-block w-full md:w-1/2 lg:w-1/3 xl:w-1/4" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style jsx>{`
+  @keyframes scroll-carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-scroll-carousel {
+    animation: scroll-carousel 20s linear infinite;
+  }
+`}</style>
+
+
 
       {/* Bloco 4 - Mockup + Oferta */}
       <section className="bg-black text-white py-12 px-6 text-center">
