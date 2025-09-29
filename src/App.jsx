@@ -74,28 +74,28 @@ export default function App() {
         </div>
       </section>
 
-      {/* Seção de Índice do Ebook */}
-<section className="bg-[#1D361F] text-[#859B48] py-12 px-6 text-center">
-  <div className="max-w-4xl mx-auto bg-black rounded-2xl p-8 shadow-lg">
-    <h2 className="text-3xl font-extrabold text-[#859B48] mb-8 uppercase tracking-wide">📚 Conteúdo do Ebook</h2>
-    <ul className="text-left space-y-6 text-lg md:text-xl font-medium">
-      <li>
-        <span className="text-3xl font-extrabold text-[#859B48]">01.</span> Introdução
-      </li>
-      <li>
-        <span className="text-3xl font-extrabold text-[#859B48]">02.</span> Músculo Iliopsoas
-      </li>
-      <li>
-        <span className="text-3xl font-extrabold text-[#859B48]">03.</span> Síndrome de Iliopsoas
-      </li>
-      <li>
-        <span className="text-3xl font-extrabold text-[#859B48]">04.</span> Como Tratar as Dores nas Costas e a Síndrome de Iliopsoas
-      </li>
-      <li>
-        <span className="text-3xl font-extrabold text-[#859B48]">05.</span> Sequência de Exercícios
-      </li>
-    </ul>
-  </div>
+     {/* Índice do Ebook */}
+<section className="bg-[#1D361F] text-[#859B48] py-16 px-6 text-left">
+<div className="max-w-5xl mx-auto bg-[#859B48] text-black p-10 rounded-3xl shadow-xl">
+<h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center">📘 Conteúdo do Ebook</h2>
+<div className="space-y-6 text-lg leading-relaxed">
+<div>
+<span className="text-3xl font-bold text-[#1D361F]">01</span> — <strong>Introdução:</strong> Descubra a origem do problema e por que a maioria das abordagens falha.
+</div>
+<div>
+<span className="text-3xl font-bold text-[#1D361F]">02</span> — <strong>Músculo Iliopsoas:</strong> Conheça o músculo-chave por trás das dores nas costas.
+</div>
+<div>
+<span className="text-3xl font-bold text-[#1D361F]">03</span> — <strong>Síndrome de Iliopsoas:</strong> Entenda os sinais, causas e implicações dessa condição.
+</div>
+<div>
+<span className="text-3xl font-bold text-[#1D361F]">04</span> — <strong>Como Tratar:</strong> Estratégias naturais e eficazes para eliminar a dor sem remédios ou cirurgias.
+</div>
+<div>
+<span className="text-3xl font-bold text-[#1D361F]">05</span> — <strong>Sequência de Exercícios:</strong> Rotina prática com instruções passo a passo para aplicar em casa.
+</div>
+</div>
+</div>
 </section>
 
 
