@@ -80,6 +80,25 @@ animation: pulseGlow 2s infinite;
         </div>
       </section>
 
+{/* Bloco - Transformação após o uso */}
+<section className="bg-white text-black py-16 px-6 text-center">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[#1D361F]">
+      Imagine Como Você Vai se Sentir Após Usar o Método
+    </h2>
+    <p className="text-xl mb-6">
+      Acordar leve, sem dores. Levantar da cama com facilidade. Voltar a caminhar, brincar com os filhos ou netos, trabalhar com mais disposição. 
+    </p>
+    <p className="text-xl mb-6">
+      Seu corpo vai recuperar a mobilidade, sua mente terá mais tranquilidade e a sua rotina vai deixar de ser limitada pela dor.
+    </p>
+    <p className="text-lg text-[#859B48] italic">
+      Tudo isso em poucos dias, aplicando técnicas simples e naturais.
+    </p>
+  </div>
+</section>
+
+
      {/* Índice do Ebook */}
 <section className="bg-[#1D361F] text-[#859B48] py-16 px-6 text-left">
 <div className="max-w-5xl mx-auto bg-[#859B48] text-black p-10 rounded-3xl shadow-xl">
@@ -177,6 +196,8 @@ animation: pulse-heart 1.2s infinite;
           </div>
         </div>
       </section>
+
+      
 
       {/* Bloco - Bônus Pós 7 Dias */}
       <section className="bg-black text-white py-12 px-6 text-center">
