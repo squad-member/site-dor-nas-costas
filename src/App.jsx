@@ -162,6 +162,9 @@ animation: pulseGlow 2s infinite;
 <h2 className="text-2xl md:text-3xl font-bold mb-4">Manual Eliminando Dor nas Costas</h2>
 <p className="text-lg mb-4">Protocolo testado que atua direto na síndrome do iliopsoas — com alívio já nos primeiros dias.</p>
 <p className="text-xl font-bold text-[#859B48]">De R$ 97 por apenas R$ 33,00</p>
+<p className="mt-4 text-lg font-semibold text-[#859B48]">
+  📨 Compre e ganhe <span className="underline">acesso imediato no seu e-mail!</span>
+</p>
 <a href="#final-cta" rel="noopener noreferrer">
 <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl mt-4 text-lg shadow hover:bg-white animate-pulse-heart">
 Comprar Agora
