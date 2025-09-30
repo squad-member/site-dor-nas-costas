@@ -98,6 +98,26 @@ animation: pulseGlow 2s infinite;
   </div>
 </section>
 
+{/* Seção - Benefícios Alcançados */}
+<section className="bg-white text-black py-16 px-6 text-center">
+  <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-[#1D361F]">💪 O Que Você Vai Alcançar</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div className="bg-[#859B48] text-black p-6 rounded-xl shadow-lg">
+      <h3 className="font-bold text-xl mb-2">🚶 Mais mobilidade e disposição</h3>
+      <p>Volte a fazer atividades simples do dia a dia sem sentir dor.</p>
+    </div>
+    <div className="bg-[#859B48] text-black p-6 rounded-xl shadow-lg">
+      <h3 className="font-bold text-xl mb-2">😌 Redução significativa da dor</h3>
+      <p>Sinta o alívio já nos primeiros dias com técnicas comprovadas.</p>
+    </div>
+    <div className="bg-[#859B48] text-black p-6 rounded-xl shadow-lg">
+      <h3 className="font-bold text-xl mb-2">🧘 Qualidade de vida restaurada</h3>
+      <p>Durma melhor, viva melhor e recupere sua confiança no corpo.</p>
+    </div>
+  </div>
+</section>
+
+
 
      {/* Índice do Ebook */}
 <section className="bg-[#1D361F] text-[#859B48] py-16 px-6 text-left">
