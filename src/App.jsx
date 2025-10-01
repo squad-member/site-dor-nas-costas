@@ -225,7 +225,7 @@ animation: pulse-heart 1.2s infinite;
       </p>
     </div>
   </div>
-  <a href="#finalcta" rel="noopener noreferrer">
+  <a href="#final-cta" rel="noopener noreferrer">
     <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white animate-pulse-heart">
       Quero Essas Ofertas Agora!
     </button>
