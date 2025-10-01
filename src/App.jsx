@@ -203,7 +203,7 @@ animation: pulse-heart 1.2s infinite;
 }
 `}</style>
 
-      {/* Seção - Ofertas Promocionais */}
+  {/* Seção - Ofertas Promocionais */}
 <section className="bg-[#1D361F] text-white py-16 px-6 text-center">
   <h2 className="text-3xl md:text-4xl font-extrabold mb-6">🎁 Ofertas Promocionais por Tempo Limitado</h2>
   <p className="text-lg max-w-3xl mx-auto mb-10">Compre agora e ganhe acesso imediato no seu e-mail!</p>
@@ -224,12 +224,12 @@ animation: pulse-heart 1.2s infinite;
         <span className="text-lg font-bold">R$ 19,00</span>
       </p>
     </div>
-    <a href="#final-cta" rel="noopener noreferrer">
-      <button className="animate-pulse-heart bg-white text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-[#859B48] hover:text-white transition-all">
-        Quero essas ofertas agora!
-      </button>
-    </a>
   </div>
+  <a href="#finalcta" rel="noopener noreferrer">
+    <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white animate-pulse-heart">
+      Quero Essas Ofertas Agora!
+    </button>
+  </a>
 </section>
 
 
