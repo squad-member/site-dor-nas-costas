@@ -203,22 +203,35 @@ animation: pulse-heart 1.2s infinite;
 }
 `}</style>
 
-      {/* Bloco 5 - Bônus */}
-      <section className="bg-[#1D361F] py-12 px-6">
-        <h2 className="text-2xl font-bold text-center mb-8 text-white">Bônus Exclusivos (opcionais)</h2>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#859B48] text-black p-6 rounded-2xl shadow">
-            <h3 className="font-semibold text-xl mb-2">🥗 Dieta Anti-inflamatória de 7 Dias</h3>
-            <p className="mb-2">Reduza dores e inchaços com um cardápio funcional e delicioso.</p>
-            <p className="text-black font-bold">Apenas R$ 19,00</p>
-          </div>
-          <div className="bg-[#859B48] text-black p-6 rounded-2xl shadow">
-            <h3 className="font-semibold text-xl mb-2">🧘 Guia de Postura e Coluna Saudável</h3>
-            <p className="mb-2">Posturas e alongamentos que mantêm sua coluna protegida todos os dias.</p>
-            <p className="text-black font-bold">Apenas R$ 19,00</p>
-          </div>
-        </div>
-      </section>
+      {/* Seção - Ofertas Promocionais */}
+<section className="bg-[#1D361F] text-white py-16 px-6 text-center">
+  <h2 className="text-3xl md:text-4xl font-extrabold mb-6">🎁 Ofertas Promocionais por Tempo Limitado</h2>
+  <p className="text-lg max-w-3xl mx-auto mb-10">Compre agora e ganhe acesso imediato no seu e-mail!</p>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
+    <div className="bg-[#859B48] text-black p-6 rounded-xl shadow">
+      <h3 className="text-xl font-bold mb-2">🥗 Dieta Anti-inflamatória de 7 Dias</h3>
+      <p>Reduza dores com um cardápio funcional e prático.</p>
+      <p className="mt-3">
+        <span className="line-through mr-2 text-gray-700">R$ 39,00</span>
+        <span className="text-lg font-bold">R$ 19,00</span>
+      </p>
+    </div>
+    <div className="bg-[#859B48] text-black p-6 rounded-xl shadow">
+      <h3 className="text-xl font-bold mb-2">🧘 Guia de Postura e Coluna Saudável</h3>
+      <p>Cuide da sua coluna com exercícios e hábitos simples.</p>
+      <p className="mt-3">
+        <span className="line-through mr-2 text-gray-700">R$ 39,00</span>
+        <span className="text-lg font-bold">R$ 19,00</span>
+      </p>
+    </div>
+  </div>
+  <a href="#comprar" rel="noopener noreferrer">
+    <button className="bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white animate-pulse-heart">
+      Quero Essas Ofertas Agora!
+    </button>
+  </a>
+</section>
+
 
       
 
