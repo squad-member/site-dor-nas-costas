@@ -117,6 +117,42 @@ animation: pulseGlow 2s infinite;
   </div>
 </section>
 
+{/* Seção Comparativa: Que tipo de pessoa você quer ser? */}
+<section className="bg-black text-white py-20 px-6">
+  <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14">✨ Mas e agora, Que tipo de Pessoa Você Quer Ser?</h2>
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-center items-start">
+    
+    {/* Antes: Preso na Dor */}
+    <div className="bg-[#330000] p-10 rounded-3xl shadow-xl">
+      <h3 className="text-2xl font-bold text-red-400 mb-6">🙁 Preso na Dor</h3>
+      <ul className="text-left text-lg list-disc list-inside text-red-200 space-y-3">
+        <li>Dores crônicas que limitam sua rotina</li>
+        <li>Fadiga constante e falta de disposição</li>
+        <li>Dependência de remédios caros</li>
+        <li>Noites mal dormidas e desconforto</li>
+        <li>Insegurança ao fazer atividades simples</li>
+        <li>Medo de precisar de cirurgia no futuro</li>
+        <li>Sensação de envelhecimento precoce</li>
+      </ul>
+    </div>
+
+    {/* Depois: Livre, Saudável e Confiante */}
+    <div className="bg-[#003300] p-10 rounded-3xl shadow-xl">
+      <h3 className="text-2xl font-bold text-green-400 mb-6">😄 Livre, Saudável e Confiante</h3>
+      <ul className="text-left text-lg list-disc list-inside text-green-200 space-y-3">
+        <li>Corpo leve, solto e sem dor</li>
+        <li>Energia renovada para o dia a dia</li>
+        <li>Autonomia para se mover com liberdade</li>
+        <li>Postura melhor e mais confiança</li>
+        <li>Mais qualidade de sono e descanso</li>
+        <li>Prevenção de dores futuras de forma natural</li>
+        <li>Bem-estar emocional e autoestima elevada</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
 
      {/* Índice do Ebook */}
