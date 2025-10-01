@@ -119,7 +119,7 @@ animation: pulseGlow 2s infinite;
 
 {/* Seção Comparativa: Que tipo de pessoa você quer ser? */}
 <section className="bg-black text-white py-20 px-6">
-  <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14">✨ Mas e agora, Que tipo de Pessoa Você Quer Ser?</h2>
+  <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14"> Mas e agora, Que tipo de Pessoa Você Quer Ser?</h2>
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-center items-start">
     
     {/* Antes: Preso na Dor */}
