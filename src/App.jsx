@@ -50,7 +50,7 @@ return (
 
 
 {/* Botão de Ação + Urgência */}
-  <a href="#comprar" rel="noopener noreferrer">
+  <a href="#final-cta" rel="noopener noreferrer">
     <button className="bg-[#859B48] text-black px-8 py-4 rounded-2xl text-xl font-semibold shadow-xl hover:bg-white animate-pulse-glow transition-all duration-300">
       Quero Alívio Agora
     </button>
