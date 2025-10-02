@@ -1,55 +1,11 @@
-import { useEffect, useState } from "react";
-
-
-function Timer() {
-const [time, setTime] = useState(15 * 60); // 15 minutos
-
-
-useEffect(() => {
-const interval = setInterval(() => {
-setTime((prev) => (prev > 0 ? prev - 1 : 0));
-}, 1000);
-return () => clearInterval(interval);
-}, []);
-
-
-const formatTime = (t) => {
-const minutes = String(Math.floor(t / 60)).padStart(2, '0');
-const seconds = String(t % 60).padStart(2, '0');
-return `${minutes}:${seconds}`;
-};
-
-
-return (
-<div className="bg-red-800 text-white text-center py-4 px-6 rounded-2xl max-w-sm mx-auto shadow-xl my-12">
-<h3 className="text-xl font-bold mb-2">⏰ Oferta especial acaba em:</h3>
-<p className="text-4xl font-mono">{formatTime(time)}</p>
-<script dangerouslySetInnerHTML={{
-  __html: `
-    let countdownTime = 15 * 60;
-    const countdownElement = document.getElementById("countdown");
-
-    function updateCountdown() {
-      const minutes = String(Math.floor(countdownTime / 60)).padStart(2, '0');
-      const seconds = String(countdownTime % 60).padStart(2, '0');
-      countdownElement.innerText = \`\${minutes}:\${seconds}\`;
-      countdownTime--;
-      if (countdownTime >= 0) {
-        setTimeout(updateCountdown, 1000);
-      }
-    }
-
-    if (countdownElement) updateCountdown();
-  `
-}} />
-
-</div>
-);
-}
-
 export default function App() {
 return (
 <div className="bg-white text-black font-sans scroll-smooth">
+  {/* Temporizador de Urgência */}
+<section className="bg-red-600 text-white py-3 px-6 text-center font-bold text-lg tracking-wide">
+  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span id="countdown" className="font-extrabold">15:00</span>
+</section>
+
 {/* Hero Section */}
 <section id="hero" className="text-center py-24 px-6 bg-white text-black">
 <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -388,6 +344,27 @@ Quero Começar Agora
 animation: pulse-heart 1.2s infinite;
 }
 `}</style>
+
+<script dangerouslySetInnerHTML={{
+  __html: `
+    let countdownTime = 15 * 60;
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const minutes = String(Math.floor(countdownTime / 60)).padStart(2, '0');
+      const seconds = String(countdownTime % 60).padStart(2, '0');
+      countdownElement.innerText = \`\${minutes}:\${seconds}\`;
+      countdownTime--;
+      if (countdownTime >= 0) {
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+
+    if (countdownElement) updateCountdown();
+  `
+}} />
+
+
 </div>
 );
 }
