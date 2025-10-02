@@ -1,3 +1,33 @@
+import { useEffect, useState } from "react";
+
+
+function Timer() {
+const [time, setTime] = useState(15 * 60); // 15 minutos
+
+
+useEffect(() => {
+const interval = setInterval(() => {
+setTime((prev) => (prev > 0 ? prev - 1 : 0));
+}, 1000);
+return () => clearInterval(interval);
+}, []);
+
+
+const formatTime = (t) => {
+const minutes = String(Math.floor(t / 60)).padStart(2, '0');
+const seconds = String(t % 60).padStart(2, '0');
+return `${minutes}:${seconds}`;
+};
+
+
+return (
+<div className="bg-red-800 text-white text-center py-4 px-6 rounded-2xl max-w-sm mx-auto shadow-xl my-12">
+<h3 className="text-xl font-bold mb-2">⏰ Oferta especial acaba em:</h3>
+<p className="text-4xl font-mono">{formatTime(time)}</p>
+</div>
+);
+}
+
 export default function App() {
 return (
 <div className="bg-white text-black font-sans scroll-smooth">
