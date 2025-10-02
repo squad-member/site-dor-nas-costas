@@ -24,6 +24,25 @@ return (
 <div className="bg-red-800 text-white text-center py-4 px-6 rounded-2xl max-w-sm mx-auto shadow-xl my-12">
 <h3 className="text-xl font-bold mb-2">⏰ Oferta especial acaba em:</h3>
 <p className="text-4xl font-mono">{formatTime(time)}</p>
+<script dangerouslySetInnerHTML={{
+  __html: `
+    let countdownTime = 15 * 60;
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const minutes = String(Math.floor(countdownTime / 60)).padStart(2, '0');
+      const seconds = String(countdownTime % 60).padStart(2, '0');
+      countdownElement.innerText = \`\${minutes}:\${seconds}\`;
+      countdownTime--;
+      if (countdownTime >= 0) {
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+
+    if (countdownElement) updateCountdown();
+  `
+}} />
+
 </div>
 );
 }
