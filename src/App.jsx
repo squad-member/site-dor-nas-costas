@@ -49,6 +49,15 @@ return (
 </div>
 
 
+{/* Botão de Ação + Urgência */}
+  <a href="#comprar" rel="noopener noreferrer">
+    <button className="bg-[#859B48] text-black px-8 py-4 rounded-2xl text-xl font-semibold shadow-xl hover:bg-white animate-pulse-glow transition-all duration-300">
+      Quero Alívio Agora
+    </button>
+  </a>
+  <p className="text-red-600 font-bold mt-4">🚨 Vagas Limitadas — Garanta já o seu acesso!</p>
+
+  {/* Animações customizadas */}
   <style jsx>{`
     @keyframes glow {
       0%, 100% {
@@ -61,9 +70,16 @@ return (
     .animate-glow {
       animation: glow 2.5s ease-in-out infinite;
     }
+
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0px #859B48; }
+      50% { box-shadow: 0 0 25px #859B48; }
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 1.8s infinite;
+    }
   `}</style>
 </section>
-
 
       {/* Bloco 2 - Manifesto */}
       <section className="bg-black text-white py-12 px-6 text-center">
