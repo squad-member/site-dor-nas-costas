@@ -19,53 +19,51 @@ const formatTime = (seconds) => {
 return (
 
 <div className="bg-white text-black font-sans scroll-smooth">
-{/* Temporizador de Urgência */}
+  {/* Temporizador de Urgência */}
 <section className="bg-red-600 text-white py-3 px-6 text-center font-bold text-lg tracking-wide">
-  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span className="font-extrabold">{formatTime(timeLeft)}</span>
+  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span id="countdown" className="font-extrabold">15:00</span>
 </section>
-
 
 {/* Hero Section */}
 <section id="hero" className="text-center py-24 px-6 bg-white text-black">
-<h1 className="text-3xl md:text-5xl font-bold mb-4">
-Elimine Suas Dores nas Costas em Poucos Dias
-</h1>
-<h2 className="text-lg md:text-2xl mb-6">
-Sem remédios caros, sem fisioterapia, sem academia — técnica natural focada no músculo iliopsoas
-</h2>
+  <h1 className="text-3xl md:text-5xl font-bold mb-4">
+    <span className="text-[#1D361F]">Elimine</span> Suas <span className="text-[#859B48]">Dores nas Costas</span> em <span className="underline decoration-[#859B48] decoration-4">Poucos Dias</span>
+  </h1>
 
+  <h2 className="text-lg md:text-2xl mb-6">
+    Sem <span className="font-bold text-[#1D361F]">remédios caros</span>, sem <span className="font-bold text-[#1D361F]">fisioterapia</span>, sem <span className="font-bold text-[#1D361F]">academia</span> — técnica natural focada no <span className="italic text-[#859B48]">músculo iliopsoas</span>
+  </h2>
 
-<div className="flex justify-center mb-6">
-<iframe
-width="560"
-height="315"
-src="https://www.youtube.com/embed/SEU_VIDEO_ID"
-title="YouTube video player"
-frameBorder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowFullScreen
-className="w-full max-w-3xl rounded-xl shadow-lg"
-></iframe>
-</div>
+  <div className="flex justify-center mb-6">
+    <div className="relative p-2 rounded-2xl animate-glow">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SEU_VIDEO_ID"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        className="w-full max-w-3xl rounded-xl"
+      ></iframe>
+    </div>
+  </div>
 
-
-<a href="#final-cta" rel="noopener noreferrer">
-<button className="bg-[#859B48] text-white px-6 py-3 rounded-2xl text-lg shadow-lg animate-pulse-glow">
-Quero Alívio Agora
-</button>
-</a>
+  <style jsx>{`
+    @keyframes glow {
+      0%, 100% {
+        box-shadow: 0 0 20px #859B48;
+      }
+      50% {
+        box-shadow: 0 0 40px #859B48;
+      }
+    }
+    .animate-glow {
+      animation: glow 2.5s ease-in-out infinite;
+    }
+  `}</style>
 </section>
 
-
-<style jsx>{`
-@keyframes pulseGlow {
-0%, 100% { box-shadow: 0 0 0px #859B48; }
-50% { box-shadow: 0 0 25px #859B48; }
-}
-.animate-pulse-glow {
-animation: pulseGlow 2s infinite;
-}
-`}</style>
 
       {/* Bloco 2 - Manifesto */}
       <section className="bg-black text-white py-12 px-6 text-center">
