@@ -19,10 +19,11 @@ const formatTime = (seconds) => {
 return (
 
 <div className="bg-white text-black font-sans scroll-smooth">
-  {/* Temporizador de Urgência */}
+ {/* Temporizador de Urgência */}
 <section className="bg-red-600 text-white py-3 px-6 text-center font-bold text-lg tracking-wide">
-  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span id="countdown" className="font-extrabold">15:00</span>
+  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span className="font-extrabold">{formatTime(timeLeft)}</span>
 </section>
+
 
 {/* Hero Section */}
 <section id="hero" className="text-center py-24 px-6 bg-white text-black">
@@ -34,33 +35,37 @@ return (
     Sem <span className="font-bold text-[#1D361F]">remédios caros</span>, sem <span className="font-bold text-[#1D361F]">fisioterapia</span>, sem <span className="font-bold text-[#1D361F]">academia</span> — técnica natural focada no <span className="italic text-[#859B48]">músculo iliopsoas</span>
   </h2>
 
- <div className="flex justify-center mb-6">
-  <div className="relative p-2 rounded-2xl animate-glow w-full max-w-5xl">
+<div className="flex justify-center mb-6">
+  <div className="rounded-xl p-1 animate-video-glow bg-black">
     <iframe
+      width="560"
+      height="315"
       src="https://www.youtube.com/embed/SEU_VIDEO_ID"
       title="YouTube video player"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-      className="w-full h-[360px] md:h-[450px] rounded-xl"
+      className="w-full max-w-3xl rounded-xl"
     ></iframe>
   </div>
 </div>
 
+<style jsx>{`
+  @keyframes videoGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px #859B48;
+    }
+    50% {
+      box-shadow: 0 0 25px #859B48;
+    }
+  }
 
-  <style jsx>{`
-    @keyframes glow {
-      0%, 100% {
-        box-shadow: 0 0 20px #859B48;
-      }
-      50% {
-        box-shadow: 0 0 40px #859B48;
-      }
-    }
-    .animate-glow {
-      animation: glow 2.5s ease-in-out infinite;
-    }
-  `}</style>
+  .animate-video-glow {
+    animation: videoGlow 2s infinite;
+    box-shadow: 0 0 15px #859B48;
+  }
+`}</style>
+
 </section>
 
 
