@@ -1,10 +1,29 @@
+import { useEffect, useState } from 'react';
 export default function App() {
+  const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutos em segundos
+
+useEffect(() => {
+  if (timeLeft <= 0) return;
+  const timer = setInterval(() => {
+    setTimeLeft(prev => prev - 1);
+  }, 1000);
+  return () => clearInterval(timer);
+}, [timeLeft]);
+
+const formatTime = (seconds) => {
+  const min = String(Math.floor(seconds / 60)).padStart(2, '0');
+  const sec = String(seconds % 60).padStart(2, '0');
+  return `${min}:${sec}`;
+};
+
 return (
+
 <div className="bg-white text-black font-sans scroll-smooth">
-  {/* Temporizador de Urgência */}
+{/* Temporizador de Urgência */}
 <section className="bg-red-600 text-white py-3 px-6 text-center font-bold text-lg tracking-wide">
-  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span id="countdown" className="font-extrabold">15:00</span>
+  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span className="font-extrabold">{formatTime(timeLeft)}</span>
 </section>
+
 
 {/* Hero Section */}
 <section id="hero" className="text-center py-24 px-6 bg-white text-black">
