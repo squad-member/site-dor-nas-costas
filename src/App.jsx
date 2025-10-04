@@ -36,29 +36,30 @@ useEffect(() => {
 
 
   return (
- <div className="w-full bg-gradient-to-b from-red-600 to-red-700 py-4 text-white text-center font-bold text-sm md:text-base">
-  <div className="flex justify-center items-center gap-2 md:gap-6">
-    <span className="text-yellow-400 text-xl">⚠️</span>
-    <span className="uppercase tracking-wider">Essa oferta termina em:</span>
-    <div className="flex gap-3 text-white text-xl md:text-2xl">
-      <div className="text-center">
-        <div>{Math.floor(timeLeft / 86400).toString().padStart(2, '0')}</div>
-        <div className="text-xs md:text-sm">DIA{Math.floor(timeLeft / 86400) !== 1 ? 'S' : ''}</div>
-      </div>
-      <div className="text-center">
-        <div>{Math.floor((timeLeft % 86400) / 3600).toString().padStart(2, '0')}</div>
-        <div className="text-xs md:text-sm">HORAS</div>
-      </div>
-      <div className="text-center">
-        <div>{Math.floor((timeLeft % 3600) / 60).toString().padStart(2, '0')}</div>
-        <div className="text-xs md:text-sm">MINUTOS</div>
-      </div>
-      <div className="text-center">
-        <div>{(timeLeft % 60).toString().padStart(2, '0')}</div>
-        <div className="text-xs md:text-sm">SEGUNDOS</div>
-      </div>
+ 
+    <div className="w-full bg-gradient-to-b from-red-600 to-red-700 py-4 text-white text-center font-bold text-sm md:text-base">
+      <div className="flex justify-center items-center gap-2 md:gap-6">
+        <span className="text-yellow-400 text-xl">⚠️</span>
+        <span className="uppercase tracking-wider">Essa oferta termina em:</span>
+        <div className="flex gap-3 text-white text-xl md:text-2xl">
+          <div className="text-center">
+            <div>{Math.floor(timeLeft / 86400).toString().padStart(2, '0')}</div>
+            <div className="text-xs md:text-sm">DIA{Math.floor(timeLeft / 86400) !== 1 ? 'S' : ''}</div>
+          </div>
+          <div className="text-center">
+            <div>{Math.floor((timeLeft % 86400) / 3600).toString().padStart(2, '0')}</div>
+            <div className="text-xs md:text-sm">HORAS</div>
+          </div>
+          <div className="text-center">
+            <div>{Math.floor((timeLeft % 3600) / 60).toString().padStart(2, '0')}</div>
+            <div className="text-xs md:text-sm">MINUTOS</div>
+          </div>
+          <div className="text-center">
+            <div>{(timeLeft % 60).toString().padStart(2, '0')}</div>
+            <div className="text-xs md:text-sm">SEGUNDOS</div>
+          </div>
+        </div>
     </div>
-  </div>
 
 
 
