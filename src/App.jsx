@@ -1,20 +1,31 @@
-import { useEffect, useState } from 'react';
-export default function App() {
-  const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutos em segundos
+import { useEffect } from 'react';
 
 useEffect(() => {
-  if (timeLeft <= 0) return;
-  const timer = setInterval(() => {
-    setTimeLeft(prev => prev - 1);
-  }, 1000);
-  return () => clearInterval(timer);
-}, [timeLeft]);
+  const endTime = new Date().getTime() + 4 * 60 * 60 * 1000;
 
-const formatTime = (seconds) => {
-  const min = String(Math.floor(seconds / 60)).padStart(2, '0');
-  const sec = String(seconds % 60).padStart(2, '0');
-  return `${min}:${sec}`;
-};
+  const interval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endTime - now;
+
+    if (distance <= 0) {
+      document.getElementById("countdown").innerHTML = "00:00:00";
+      clearInterval(interval);
+      return;
+    }
+
+    const hours = Math.floor((distance / (1000 * 60 * 60)));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = `
+      ${hours.toString().padStart(2, "0")}:
+      ${minutes.toString().padStart(2, "0")}:
+      ${seconds.toString().padStart(2, "0")}
+    `;
+  }, 1000);
+
+  return () => clearInterval(interval);
+}, []);
 
 return (
 
@@ -25,6 +36,7 @@ return (
     ⏳ Oferta expira em: <span id="countdown" className="text-[#FFCC00]">00:00:00</span>
   </div>
 </div>
+
 
 
 {/* Hero Section */}
@@ -380,55 +392,11 @@ animation: pulse-heart 1.2s infinite;
 }
 `}</style>
 
-<script dangerouslySetInnerHTML={{
-  __html: `
-    let countdownTime = 15 * 60;
-    const countdownElement = document.getElementById("countdown");
 
-    function updateCountdown() {
-      const minutes = String(Math.floor(countdownTime / 60)).padStart(2, '0');
-      const seconds = String(countdownTime % 60).padStart(2, '0');
-      countdownElement.innerText = \`\${minutes}:\${seconds}\`;
-      countdownTime--;
-      if (countdownTime >= 0) {
-        setTimeout(updateCountdown, 1000);
-      }
-    }
 
-    if (countdownElement) updateCountdown();
-  `
-}} />
 
-<script>
- () => {
-    const endTime = new Date().getTime() + 4 * 60 * 60 * 1000; // 4 horas
-
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = endTime - now;
-
-      if (distance <= 0) {
-        document.getElementById("countdown").innerHTML = "00:00:00";
-        clearInterval(interval);
-        return;
-      }
-
-      const hours = Math.floor((distance / (1000 * 60 * 60)));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerHTML = `
-        ${hours.toString().padStart(2, "0")}:
-        ${minutes.toString().padStart(2, "0")}:
-        ${seconds.toString().padStart(2, "0")}
-      `;
-    }, 1000);
-  };
-
-  countdown();
-</script>
 
 
 </div>
 );
-}
+
