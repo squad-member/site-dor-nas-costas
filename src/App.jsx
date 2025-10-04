@@ -1,21 +1,24 @@
 import { useEffect, useState } from 'react';
 
+export default function App() {
+  // Timer: 15 minutos (900s)
+  const [timeLeft, setTimeLeft] = useState(15 * 60);
 
-useEffect(() => {
-  if (timeLeft <= 0) return;
+  // Efeito para diminuir o timer
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+    const timer = setInterval(() => {
+      setTimeLeft(prev => prev - 1);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft]);
 
-  const timer = setInterval(() => {
-    setTimeLeft(prev => prev - 1);
-  }, 1000);
-
-  return () => clearInterval(timer);
-}, [timeLeft]);
-
-const formatTime = (seconds) => {
-  const min = String(Math.floor(seconds / 60)).padStart(2, '0');
-  const sec = String(seconds % 60).padStart(2, '0');
-  return `${min}:${sec}`;
-};
+  // Formatar para mm:ss
+  const formatTime = (seconds) => {
+    const min = String(Math.floor(seconds / 60)).padStart(2, '0');
+    const sec = String(seconds % 60).padStart(2, '0');
+    return `${min}:${sec}`;
+  };
 
 
   
@@ -23,9 +26,10 @@ const formatTime = (seconds) => {
 
   return (
     <div className="bg-white text-black font-sans">
- <div className="fixed top-6 right-6 bg-black text-[#859B48] text-xl md:text-3xl px-6 py-3 rounded-full shadow-lg z-50">
-  ⏳ Oferta expira em: {formatTime(timeLeft)}
-</div>
+ {/* TIMER FIXO */}
+      <div className="fixed top-6 right-6 bg-black text-[#859B48] text-xl md:text-3xl px-6 py-3 rounded-full shadow-lg z-50">
+        ⏳ Oferta expira em: {formatTime(timeLeft)}
+      </div>
 
 
 
@@ -390,4 +394,4 @@ animation: pulse-heart 1.2s infinite;
 
 </div>
 );
-
+}
