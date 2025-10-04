@@ -19,10 +19,12 @@ const formatTime = (seconds) => {
 return (
 
 <div className="bg-white text-black font-sans scroll-smooth">
- {/* Temporizador de Urgência */}
-<section className="bg-red-600 text-white py-3 px-6 text-center font-bold text-lg tracking-wide">
-  ⏳ Oferta disponível por tempo limitado! Finaliza em: <span className="font-extrabold">{formatTime(timeLeft)}</span>
-</section>
+{/* Temporizador fixo */}
+<div className="sticky top-0 z-50 bg-[#1D361F] text-[#fff] text-center py-4 shadow-lg">
+  <div className="text-xl md:text-2xl font-bold">
+    ⏳ Oferta expira em: <span id="countdown" className="text-[#FFCC00]">00:00:00</span>
+  </div>
+</div>
 
 
 {/* Hero Section */}
@@ -396,6 +398,8 @@ animation: pulse-heart 1.2s infinite;
     if (countdownElement) updateCountdown();
   `
 }} />
+
+
 
 
 </div>
