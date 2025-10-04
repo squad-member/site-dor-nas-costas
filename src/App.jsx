@@ -26,10 +26,11 @@ export default function App() {
 
   return (
     <div className="bg-white text-black font-sans">
- {/* TIMER FIXO */}
-      <div className="fixed top-6 right-6 bg-black text-[#859B48] text-xl md:text-3xl px-6 py-3 rounded-full shadow-lg z-50">
-        ⏳ Oferta expira em: {formatTime(timeLeft)}
-      </div>
+ <div className="fixed top-6 right-6 bg-black text-[#859B48] text-xl md:text-3xl px-6 py-3 rounded-full shadow-lg z-50 flex items-center gap-3">
+  <span className="text-2xl md:text-3xl">⏳</span>
+  <span>Oferta expira em: {formatTime(timeLeft)}</span>
+</div>
+
 
 
 
