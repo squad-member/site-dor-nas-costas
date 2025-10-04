@@ -39,7 +39,7 @@ useEffect(() => {
  
  
     <div className="w-full bg-gradient-to-b from-red-600 to-red-700 py-4 text-white text-center font-bold text-sm md:text-base">
-      <div className="flex justify-center items-center gap-2 md:gap-6 w-full fixed top-0 z-50 bg-gradient-to-b from-red-600 to-red-700 py-4 text-white text-center font-bold text-sm md:text-base">
+      <div className="flex justify-center items-center gap-2 md:gap-6 ">
         <span className="text-yellow-400 text-xl">⚠️</span>
         <span className="uppercase tracking-wider">Essa oferta termina em:</span>
         <div className="flex gap-3 text-white text-xl md:text-2xl">
@@ -162,9 +162,9 @@ useEffect(() => {
       </section>
 
 {/* Bloco - Transformação após o uso */}
-<section className="bg-white text-black py-16 px-6 text-center">
+<section className="bg-black text-white py-16 px-6 text-center">
   <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[#1D361F]">
+    <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[#ADFF2F] animate-glow-title">
       Imagine Como Você Vai se Sentir Após Usar o Método
     </h2>
     <p className="text-xl mb-6">
@@ -177,6 +177,20 @@ useEffect(() => {
       Tudo isso em poucos dias, aplicando técnicas simples e naturais.
     </p>
   </div>
+
+  <style jsx>{`
+    @keyframes glowTitle {
+      0%, 100% {
+        text-shadow: 0 0 10px #ADFF2F;
+      }
+      50% {
+        text-shadow: 0 0 20px #ADFF2F;
+      }
+    }
+    .animate-glow-title {
+      animation: glowTitle 2.5s ease-in-out infinite;
+    }
+  `}</style>
 </section>
 
 {/* Seção - Benefícios Alcançados */}
