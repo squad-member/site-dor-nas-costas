@@ -1,39 +1,32 @@
 import { useEffect, useState } from 'react';
 
-export default function App() {
-  const [timeLeft, setTimeLeft] = useState(15 * 60);
 
-  useEffect(() => {
-    if (timeLeft <= 0) return;
-    const timer = setInterval(() => {
-      setTimeLeft(prev => prev - 1);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [timeLeft]);
+useEffect(() => {
+  if (timeLeft <= 0) return;
 
-  const formatTime = (seconds) => {
-    const min = String(Math.floor(seconds / 60)).padStart(2, '0');
-    const sec = String(seconds % 60).padStart(2, '0');
-    return `${min}:${sec}`;
-  };
+  const timer = setInterval(() => {
+    setTimeLeft(prev => prev - 1);
+  }, 1000);
 
-  return (
-    <div>
-      <div>{formatTime(timeLeft)}</div>
-      {/* o resto do layout */}
-    </div>
-  );
-}
+  return () => clearInterval(timer);
+}, [timeLeft]);
+
+const formatTime = (seconds) => {
+  const min = String(Math.floor(seconds / 60)).padStart(2, '0');
+  const sec = String(seconds % 60).padStart(2, '0');
+  return `${min}:${sec}`;
+};
+
+
+  
 
 
   return (
     <div className="bg-white text-black font-sans">
-      {/* Temporizador Fixo */}
-      <div className="sticky top-0 z-50 bg-[#1D361F] text-white text-center py-4 shadow-lg">
-        <div className="text-xl md:text-2xl font-bold">
-          ⏳ Oferta expira em: <span className="text-[#FFCC00]">{formatTime(timeLeft)}</span>
-        </div>
-      </div>
+ <div className="fixed top-6 right-6 bg-black text-[#859B48] text-xl md:text-3xl px-6 py-3 rounded-full shadow-lg z-50">
+  ⏳ Oferta expira em: {formatTime(timeLeft)}
+</div>
+
 
 
 
