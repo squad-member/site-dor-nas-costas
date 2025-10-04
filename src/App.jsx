@@ -38,7 +38,7 @@ useEffect(() => {
   return (
  
  
-    <div className="w-full bg-gradient-to-b from-red-600 to-red-700 py-4 text-white text-center font-bold text-sm md:text-base">
+    <div className="w-full fixed top-0 z-50 bg-gradient-to-b from-red-600 to-red-700 py-4 text-white text-center font-bold text-sm md:text-base">
       <div className="flex justify-center items-center gap-2 md:gap-6">
         <span className="text-yellow-400 text-xl">⚠️</span>
         <span className="uppercase tracking-wider">Essa oferta termina em:</span>
