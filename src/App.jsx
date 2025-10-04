@@ -22,7 +22,7 @@ export default function App() {
 
   
 useEffect(() => {
-  const [timeLeft, setTimeLeft] = useState(15 * 60); // ou o tempo que quiser em segundos
+  
 
   if (timeLeft <= 0) return;
   const timer = setInterval(() => {
