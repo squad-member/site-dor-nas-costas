@@ -399,7 +399,34 @@ animation: pulse-heart 1.2s infinite;
   `
 }} />
 
+<script>
+ () => {
+    const endTime = new Date().getTime() + 4 * 60 * 60 * 1000; // 4 horas
 
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+
+      if (distance <= 0) {
+        document.getElementById("countdown").innerHTML = "00:00:00";
+        clearInterval(interval);
+        return;
+      }
+
+      const hours = Math.floor((distance / (1000 * 60 * 60)));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = `
+        ${hours.toString().padStart(2, "0")}:
+        ${minutes.toString().padStart(2, "0")}:
+        ${seconds.toString().padStart(2, "0")}
+      `;
+    }, 1000);
+  };
+
+  countdown();
+</script>
 
 
 </div>
