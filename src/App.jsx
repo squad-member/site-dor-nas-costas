@@ -417,7 +417,7 @@ animation: pulse-heart 1.2s infinite;
 <section id="final-cta" className="bg-black py-12 px-6 text-center">
 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Pronto para dizer adeus à dor nas costas?</h2>
 <p className="mb-4 text-lg text-white">Clique no botão abaixo e comece hoje mesmo. R$ 33,00 com acesso imediato à primeira parte.</p>
-<a href="https://hotmart.com/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">
+<a href="https://pay.hotmart.com/D101999072A?checkoutMode=10&_gl=1*cemlmr*_gcl_au*MTc0NTYzMzM1MC4xNzU4NTY5NzkxLjE5MDE3MTQzNzkuMTc1OTc2MDg3My4xNzU5NzY0MDE0*FPAU*MTc0NTYzMzM1MC4xNzU4NTY5Nzkx*_ga*MTI3NjMwNDA4My4xNzQzMzY0Nzc4*_ga_GQH2V1F11Q*czE3NTk3NjA2OTgkbzkkZzEkdDE3NTk3NjQzOTkkajYkbDAkaDA.&bid=1759830430944" target="_blank" rel="noopener noreferrer">
 <button className="animate-pulse-heart bg-[#859B48] text-black px-8 py-3 rounded-2xl text-lg shadow hover:bg-white hover:text-black">
 Quero Começar Agora
 </button>
