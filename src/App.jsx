@@ -409,10 +409,21 @@ animation: pulse-heart 1.2s infinite;
 <h3 className="font-bold text-lg mb-2">🩺 Posso fazer mesmo com hérnia de disco?</h3>
 <p>Sim. Os exercícios são seguros e não exigem impacto. Sempre respeite seus limites.</p>
 </div>
-<div className="bg-white rounded-xl p-6 shadow-lg">
-<h3 className="font-bold text-lg mb-2">⏳ Como posso contactar o suporte?</h3>
-<p>Pode nos contactar pelo intagram: https://www.instagram.com/manu.aleliminandodornascostas/</p>
+<div className="bg-white rounded-xl p-6 shadow-lg"> 
+  <h3 className="font-bold text-lg mb-2">Como posso contactar o suporte?</h3>
+  <p>
+    Pode nos contactar pelo Instagram:&nbsp;
+    <a
+      href="https://www.instagram.com/manu.aleliminandodornascostas/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 underline hover:text-blue-800"
+    >
+     
+    </a>
+  </p>
 </div>
+
 </div>
 </div>
 </section>
