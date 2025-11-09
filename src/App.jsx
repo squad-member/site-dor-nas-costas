@@ -81,7 +81,7 @@ useEffect(() => {
  <div className="flex justify-center mb-6">
   <div className="relative p-2 rounded-2xl animate-glow w-full max-w-5xl">
     <iframe
-      src="https://www.youtube.com/watch?v=1pDXuXhb0O4"
+      src="https://www.youtube.com/embed/1pDXuXhb0O4"
       title="YouTube video player"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
