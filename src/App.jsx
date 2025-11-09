@@ -412,16 +412,16 @@ animation: pulse-heart 1.2s infinite;
 <div className="bg-white rounded-xl p-6 shadow-lg"> 
   <h3 className="font-bold text-lg mb-2">Como posso contactar o suporte?</h3>
   <p>
-    Pode nos contactar pelo Instagram:&nbsp;
-    <a
-      href="https://www.instagram.com/manu.aleliminandodornascostas/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 underline hover:text-blue-800"
-    >
-     
-    </a>
-  </p>
+  Pode nos contactar pelo Instagram:&nbsp;
+  <a
+    href="https://www.instagram.com/manu.aleliminandodornascostas/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#1D361F] font-bold underline hover:text-[#859B48] transition-colors duration-300"
+  >
+    @manu.aleliminandodornascostas
+  </a>
+</p>
 </div>
 
 </div>
